@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;800&display=swap");
+
+/* BASIC COLORS PALETTE */
+
+:root {
+    --color-accent: #fad209;
+
+    --color-main-dark: hsl(49, 94%, 7%);
+    --color-main-dark-lighter: hsl(50, 94%, 14%);
+    --color-main-dark-darker: hsl(49, 89%, 4%);
+
+    --color-main-light: #f7f7f7;
+    --color-main-light-darker: hsl(0, 0%, 90%);
+    --color-main-light-lighter: hsl(0, 0%, 100%);
+
+    --color-font-light: hsl(47, 54%, 93%);
+    --color-font-dark: hsl(0, 1%, 26%);
+    --color-font-dark-darker: hsl(0, 1%, 20%);
+}
+
+/* FONTS */
+
+:root {
+    --font-bebas: "Bebas Neue", cursive;
+    --font-poppins: "Poppins", sans-serif;
+
+    /* Mobile */
+    --font-size-mobile-normal: 1.4rem;
+    --font-size-mobile-h1: 4rem;
+    --font-size-mobile-h2: 2.9rem;
+    --font-size-mobile-h3: 2.2rem;
+
+    /* Tablet */
+    --font-size-tablet-normal: 1.5rem;
+    --font-size-tablet-h1: 4.4rem;
+    --font-size-tablet-h2: 3.1rem;
+    --font-size-tablet-h3: 2.4rem;
+
+    /* Desktop */
+    --font-size-desktop-normal: 1.6rem;
+    --font-size-desktop-h1: 5rem;
+    --font-size-desktop-h2: 3.3rem;
+    --font-size-desktop-h3: 2.5rem;
+}
+
+/* DISTANCES */
+
+:root {
+    /* Mobile */
+    --padding-mobile-frame: 4rem 2rem 6rem;
+
+    /* Tablet */
+    --padding-tablet-frame: 5rem 3.5rem 8rem;
+
+    /* Desktop */
+    --padding-desktop-frame: 6.5rem 6rem 10rem;
+}

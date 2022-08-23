@@ -1,9 +1,80 @@
 @import "./base.css";
 
-#app {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    font-weight: normal;
+html {
+    font-size: 62.5%;
+}
+
+#app {
+    color: var(--color-font-dark);
+    font-size: var(--font-size-mobile-normal);
+    line-height: 1.5;
+    padding: var(--padding-mobile-frame);
+
+    background-color: var(--color-main-light);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-bebas);
+    line-height: 1;
+    color: var(--color-font-dark-darker);
+}
+
+h1 {
+    font-size: var(--font-size-mobile-h1);
+}
+
+h2 {
+    font-size: var(--font-size-mobile-h2);
+}
+
+h3 {
+    font-size: var(--font-size-mobile-h3);
+}
+
+@media (min-width: 600px) {
+    #app {
+        font-size: var(--font-size-tablet-normal);
+        padding: var(--padding-tablet-frame);
+    }
+
+    h1 {
+        font-size: var(--font-size-tablet-h1);
+    }
+
+    h2 {
+        font-size: var(--font-size-tablet-h2);
+    }
+
+    h3 {
+        font-size: var(--font-size-tablet-h3);
+    }
+}
+
+@media (min-width: 1000px) {
+    #app {
+        font-size: var(--font-size-desktop-normal);
+        padding: var(--padding-desktop-frame);
+    }
+
+    h1 {
+        font-size: var(--font-size-desktop-h1);
+    }
+
+    h2 {
+        font-size: var(--font-size-desktop-h2);
+    }
+
+    h3 {
+        font-size: var(--font-size-desktop-h3);
+    }
 }
