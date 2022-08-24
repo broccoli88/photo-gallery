@@ -9,8 +9,8 @@
     --color-main-dark-lighter: hsl(50, 94%, 14%);
     --color-main-dark-darker: hsl(49, 89%, 4%);
 
-    --color-main-light: #f7f7f7;
-    --color-main-light-darker: hsl(0, 0%, 90%);
+    --color-main-light: hsl(0, 0%, 97%);
+    --color-main-light-darker: hsl(0, 0%, 94%);
     --color-main-light-lighter: hsl(0, 0%, 100%);
 
     --color-font-light: hsl(47, 54%, 93%);
@@ -43,15 +43,30 @@
     --font-size-desktop-h3: 2.5rem;
 }
 
-/* DISTANCES */
+/* PADDINGS & MARGINS */
 
 :root {
     /* Mobile */
-    --padding-mobile-frame: 4rem 2rem 6rem;
+    --padding-mobile-frame: 8rem 2rem 6rem;
+    --padding-mobile-navbar: 0 2rem;
 
     /* Tablet */
     --padding-tablet-frame: 5rem 3.5rem 8rem;
 
     /* Desktop */
     --padding-desktop-frame: 6.5rem 6rem 10rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
 }
