@@ -3,7 +3,8 @@
 /* BASIC COLORS PALETTE */
 
 :root {
-    --color-accent: #fad209;
+    --color-accent: hsl(50, 96%, 51%);
+    --color-accent-lighter: hsl(50, 96%, 70%);
 
     --color-main-dark: hsl(49, 94%, 7%);
     --color-main-dark-lighter: hsl(50, 94%, 14%);
@@ -16,6 +17,8 @@
     --color-font-light: hsl(47, 54%, 93%);
     --color-font-dark: hsl(0, 1%, 26%);
     --color-font-dark-darker: hsl(0, 1%, 20%);
+
+    --color-shadow-bottom: 0 1px 2px 0.2px hsl(0, 1%, 26%, 0.05);
 }
 
 /* FONTS */
@@ -48,7 +51,8 @@
 :root {
     /* Mobile */
     --padding-mobile-frame: 8rem 2rem 6rem;
-    --padding-mobile-navbar: 0 2rem;
+    --padding-mobile-top: 4rem;
+    --padding-mobile-sides: 2rem;
 
     /* Tablet */
     --padding-tablet-frame: 5rem 3.5rem 8rem;
@@ -69,4 +73,18 @@
 .flex-center {
     justify-content: center;
     align-items: center;
+}
+
+.text-color {
+    background-image: linear-gradient(
+        to top,
+        var(--color-font-dark-darker),
+        var(--color-font-dark),
+        var(--color-accent),
+        var(--color-accent-lighter)
+    );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

@@ -1,0 +1,1 @@
+check how to add linear gadient for text to CSS custom property, otherwise how to utilize it properly for casual text (mainly navbar on hover)
