@@ -15,8 +15,18 @@
     --color-main-light-lighter: hsl(0, 0%, 100%);
 
     --color-font-light: hsl(47, 54%, 93%);
-    --color-font-dark: hsl(0, 1%, 26%);
-    --color-font-dark-darker: hsl(0, 1%, 20%);
+    /* --color-font-dark: hsl(0, 1%, 26%); */
+    --color-font-dark: hsl(0, 0%, 50%);
+    --color-font-dark-darker: hsl(0, 1%, 40%);
+
+    --color-linear-gradient: linear-gradient(
+        135deg,
+        hsl(0, 0%, 70%),
+        hsl(0, 0%, 60%),
+        hsl(0, 0%, 50%),
+        var(--color-accent) 85%,
+        var(--color-accent-lighter)
+    );
 
     --color-shadow-bottom: 0 1px 2px 0.2px hsl(0, 1%, 26%, 0.05);
 }
@@ -25,7 +35,7 @@
 
 :root {
     --font-bebas: "Bebas Neue", cursive;
-    --font-poppins: "Poppins", sans-serif;
+    --font-basic: "Poppins", sans-serif;
 
     /* Mobile */
     --font-size-mobile-normal: 1.4rem;
@@ -80,7 +90,7 @@
         to top,
         var(--color-font-dark-darker),
         var(--color-font-dark),
-        var(--color-accent),
+        var(--color-accent) 90%,
         var(--color-accent-lighter)
     );
     -webkit-background-clip: text;
